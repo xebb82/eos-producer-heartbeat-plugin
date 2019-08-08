@@ -44,11 +44,11 @@ Total system ram, state_db_size, Processor type, VM or not, etc.
   cd plugins
   git clone https://github.com/LiquidEOS/eos-producer-heartbeat-plugin.git producer_heartbeat_plugin
   cd producer_heartbeat_plugin
-  git checkout tags/v1.5.01
+  git checkout tags/v1.8.1
   cd ../..
   git apply plugins/producer_heartbeat_plugin/install.patch
-  ./eosio_build.sh -s "EOS"
-  sudo ./eosio_install.sh
+  cd scripts
+  ./eosio_build.sh -P
   ```
 2. Build and install nodeos as usual.
 
